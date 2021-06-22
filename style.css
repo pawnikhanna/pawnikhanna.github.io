@@ -167,6 +167,13 @@ nav {
 
 .main-message p {
     text-transform: lowercase;
+    padding-bottom: 2rem;
+}
+
+.main-message a {
+    color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .btn {
@@ -241,8 +248,8 @@ nav {
 }
 
 .activities-grid-item {
-    width: 30rem;
-    height: 40rem;
+    width: 45rem;
+    height: 60rem;
     padding: 5rem;
     color: #fafafa;
     position: relative;
@@ -262,7 +269,7 @@ nav {
 
 .activities-grid-item p{
     margin-top: 1rem;
-    font-size: 1.45rem;
+    font-size: 2rem;
 }
 
 .activities-grid-item::before {
@@ -292,12 +299,16 @@ nav {
     margin: 2rem 0;
 }
 
+.activities-grid-item li{
+    font-size: 1.42rem;
+    margin: 0.25rem 0;
+}
 
 /* testimonials */
 
 .testimonials {
     width: 100%;
-    height: 120vh;
+    height: 125vh;
     background: linear-gradient(135deg, rgb(49, 24, 131, 0.9)0%, rgb(72, 56, 149, 0.8)100%), url("https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80") center no-repeat;
     background-size: cover;
     position: relative;
@@ -331,29 +342,37 @@ nav {
 
 .testimonial-text-box {
     padding: 0 1.5rem;
-    margin-bottom: 0.5rem;
     position: relative;
     padding: 1rem;
     width: 30%;
     margin: auto;
 }
 
-.testimonial-text-box i {
-    position: absolute;
-    top: -8rem;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    font-size: 9rem;
-    color: #4f1369;
+.testimonial-text-box p{
+    margin-top: 1rem 0; 
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    text-align: justify;
 }
 
-.testimonial-text-box p{
-    margin-top: 1rem;
-    font-size: 1.45rem;
-    text-align: justify;
+.testimonial-text-box h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+.testimonial-text-box li{
+    font-size: 1.42rem;
+    margin: 0.25rem 0;
+    text-align: left;
+}
+.testimonial-text-box a{
+    color: #fafafa;
+    text-decoration: underline;
+    font-size: 1.42rem;
+    margin: 0.25rem 0;
+    text-align: left;
 }
 
 .footer-customer img {
@@ -377,18 +396,20 @@ nav {
 
 .adventure-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 0.5rem;
+    /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
 }
 
 .adventure-grid-item p {
     color: rgba(0, 0, 0, 0.699);
+    padding-bottom: 2.45rem;
 }
 
 .achievements {
-    font-size: 1.5rem;
+    font-size: 1.85rem;
 }
 
 footer {
