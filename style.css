@@ -126,7 +126,6 @@ nav {
 .hero {
     width: 100%;
     height: 80vh;
-    /* background: linear-gradient(135deg, rgba(245,255,75,1) 0%, rgba(255,249,179,0.8) 62%, rgba(252,252,210,0.8188317563353467) 100%), url("./images/stars.jpg") center no-repeat; */
     background: linear-gradient(135deg, rgb(49, 24, 131, 0.9)0%, rgb(72, 56, 149, 0.8)100%), url("https://images.unsplash.com/photo-1528045315933-9eeb987b9e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80") center no-repeat; 
     background-size: cover;
     position: relative;
@@ -202,16 +201,17 @@ nav {
 }
 
 
-/* experience the outdoors */
+/* about-section */
 
-.experience-outdoor {
+.about-section {
     padding: 0;
 }
 
 .title-heading {
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
 }
 
 .title-heading h3 {
@@ -228,7 +228,7 @@ nav {
     text-transform: none;
 }
 
-.activities-grid {
+.education-grid {
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
     grid-gap: 4.5rem; */
@@ -247,7 +247,7 @@ nav {
     height: 60px ;
 }
 
-.activities-grid-item {
+.education-grid-item {
     width: 43rem;
     height: 60rem;
     padding: 5rem;
@@ -262,17 +262,17 @@ nav {
     margin-bottom: 5rem;
 }
 
-.activities-grid-item:hover {
+.education-grid-item:hover {
     box-shadow: 0px 0px 20px #8087e7fb;
     transform: scale(1.05);
 }
 
-.activities-grid-item p{
+.education-grid-item p{
     margin-top: 1rem;
     font-size: 2rem;
 }
 
-.activities-grid-item::before {
+.education-grid-item::before {
     content: "";
     position: absolute;
     top: 0;
@@ -287,25 +287,21 @@ nav {
     background: url("https://images.unsplash.com/photo-1558021211-6d1403321394?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80") center no-repeat;
 }
 
-/* .activities-grid-item i {
-    font-size: 1.5rem;
-} */
-
-.activities-grid-item h1 {
+.education-grid-item h1 {
     font-family: 'Aldrich', sans-serif;
     font-size: 1.7rem;
     text-transform: uppercase;
     margin: 2rem 0;
 }
 
-.activities-grid-item li{
+.education-grid-item li{
     font-size: 1.42rem;
     margin: 0.25rem 0;
 }
 
-/* testimonials */
+/* internships */
 
-.testimonials {
+.internships {
     width: 100%;
     height: 110vh;
     background: linear-gradient(135deg, rgb(49, 24, 131, 0.9)0%, rgb(72, 56, 149, 0.8)100%), url("https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80") center no-repeat;
@@ -314,7 +310,7 @@ nav {
     display: flex;
 }
 
-.testimonials::before {
+.internships::before {
     content: "";
     position: absolute;
     top: -1rem;
@@ -325,7 +321,7 @@ nav {
     background-size: cover;
 }
 
-.testimonial {
+.internship {
     width: 100%;
     color: #fafafa;
     position: absolute;
@@ -339,11 +335,11 @@ nav {
     text-align: center;
 }
 
-.testimonial-text-box i {
+.internship-text-box i {
     font-size: 1.5rem;
 }
 
-.testimonial-text-box {
+.internship-text-box {
     padding: 0 1.5rem;
     position: relative;
     padding: 1rem;
@@ -351,26 +347,26 @@ nav {
     margin: auto;
 }
 
-.testimonial-text-box p{
+.internship-text-box p{
     margin-top: 1rem 0; 
     padding-top: 1.5rem;
     font-size: 2rem;
     text-align: justify;
 }
 
-.testimonial-text-box h1{
+.internship-text-box h1{
     font-family: 'Aldrich', sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
     margin: 3rem 0;
 }
 
-.testimonial-text-box li{
+.internship-text-box li{
     font-size: 1.42rem;
     margin: 0.25rem 0;
     text-align: left;
 }
-.testimonial-text-box a{
+.internship-text-box a{
     color: #fafafa;
     text-decoration: underline;
     font-size: 1.42rem;
@@ -395,28 +391,26 @@ nav {
     transform: scale(1.15);
 }
 
-/* Begin adventure */
+/* Begin projects */
 
-.adventure-grid {
+.projects-grid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-gap: 1rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
     margin-left: 26%;
 }
 
-.adventure-grid-item{
+.projects-grid-item{
     left: 50%
 }
 
-.adventure-grid-item p {
+.projects-grid-item p {
     color: rgba(0, 0, 0, 0.699);
     padding-bottom: 2.45rem;
 }
 
-.achievements {
+.projects {
     font-size: 1.85rem;
 }
 
@@ -439,7 +433,7 @@ footer {
         -ms-transform: translateY(40%);
         -o-transform: translateY(40%);
     }
-    .testimonial-text-box {
+    .internship-text-box {
         width: 100%;
     }
 }
@@ -450,7 +444,7 @@ footer {
         background: url("images/wave-medium.png") center no-repeat;
         background-size: cover;
     }
-    .testimonials::before {
+    .internships::before {
         height: 9.4rem;
         background: url("images/wave-medium-reversed.png") center no-repeat;
         background-size: cover;
@@ -539,7 +533,7 @@ footer {
         font-size: 2.5rem;
     }
 
-    .testimonial-text-box {
+    .internship-text-box {
         width: 30%;
     }
 
@@ -551,7 +545,7 @@ footer {
         background: url("images/wave-large.png") center no-repeat;
         background-size: cover;
     }
-    .testimonials::before {
+    .internships::before {
         height: 22.7rem;
         background: url("./images/wave-large-reversed.png") center no-repeat;
         background-size: cover;
@@ -564,7 +558,7 @@ footer {
         -o-transform: translateY(45%);
     }
 
-    .testimonial-text-box {
+    .internship-text-box {
         width: 30%;
     }
 }
